@@ -69,12 +69,7 @@ export const CustomerDineInView: React.FC = () => {
   const isGroupedView = selectedCategoryId === 'all' && !searchQuery.trim();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50/40 via-slate-50 to-amber-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100 pb-36 relative overflow-x-hidden transition-colors duration-300">
-      {/* Decorative ambient background glows for Glassmorphism depth */}
-      <div className="absolute top-20 left-1/4 w-96 h-96 bg-orange-200/30 dark:bg-orange-950/20 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute top-96 right-1/4 w-96 h-96 bg-amber-200/25 dark:bg-amber-950/15 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-40 left-1/3 w-80 h-80 bg-rose-100/20 dark:bg-rose-950/15 rounded-full blur-3xl pointer-events-none -z-10" />
-
+    <div className="min-h-screen bg-gradient-to-b from-orange-50/50 via-slate-50 to-amber-50/40 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100 pb-36 relative overflow-x-hidden transition-colors duration-300">
       {/* Clean Minimal Header */}
       <CustomerHeader
         searchQuery={searchQuery}
@@ -99,8 +94,8 @@ export const CustomerDineInView: React.FC = () => {
       {/* Minimal Filter Pills */}
       <FilterPills filters={filters} setFilters={setFilters} />
 
-      {/* Main 3x3 Grid Layout Container */}
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 mt-4">
+      {/* Main 2-Grid / 3-Grid Layout Container */}
+      <main className="max-w-6xl mx-auto px-3 sm:px-6 mt-3 sm:mt-4">
         {/* Craverse Brand Showcase Hero */}
         {selectedCategoryId === 'all' && !searchQuery.trim() && (
           <div className="mb-5 rounded-3xl overflow-hidden glass-card border border-orange-500/25 dark:border-orange-500/35 relative p-4 sm:p-5 shadow-sm bg-gradient-to-r from-orange-50/80 via-white/70 to-amber-50/60 dark:from-slate-900/90 dark:via-slate-900/80 dark:to-orange-950/20 animate-fadeIn">
@@ -216,7 +211,7 @@ export const CustomerDineInView: React.FC = () => {
                     </div>
 
                     {/* Medium 2-Grid on mobile, 3-Grid on desktop */}
-                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4 lg:gap-6">
                       {catProducts.map((product) => (
                         <ProductCard
                           key={product.id}
@@ -235,7 +230,7 @@ export const CustomerDineInView: React.FC = () => {
               Showing {filteredProducts.length} items
             </div>
             {/* Medium 2-Grid on mobile, 3-Grid on desktop */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4 lg:gap-6">
               {filteredProducts.map((product) => (
                 <ProductCard
                   key={product.id}
