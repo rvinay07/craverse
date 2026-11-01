@@ -1,0 +1,22 @@
+{
+  "short_name": "Craverse",
+  "name": "Craverse Restaurant Digital Ordering & Management",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192' fill='%23ea580c'><rect width='192' height='192' rx='40' fill='%230f172a'/><path d='M88 72H72V16h-16v56H40V16H24v56c0 16.96 13.28 30.72 30 31.76V176h20v-72.24C90.72 102.72 104 88.96 104 72V16H88v56zm40-24v64h20v64h24V16c-22.08 0-40 17.92-40 40z' fill='%23ea580c'/></svg>",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23ea580c'><rect width='512' height='512' rx='100' fill='%230f172a'/><path d='M235 192h-43V43h-42v149h-43V43H64v149c0 45.2 35.4 81.9 80 84.7V469h53V276.7c44.6-2.8 80-39.5 80-84.7V43h-42v149zm106-64v170h54v171h64V43c-58.9 0-107 47.8-107 107z' fill='%23ea580c'/></svg>",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#ea580c",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+
