@@ -215,8 +215,8 @@ export const CustomerDineInView: React.FC = () => {
                       </span>
                     </div>
 
-                    {/* 3x3 Columns Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+                    {/* Medium 2-Grid on mobile, 3-Grid on desktop */}
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
                       {catProducts.map((product) => (
                         <ProductCard
                           key={product.id}
@@ -234,8 +234,8 @@ export const CustomerDineInView: React.FC = () => {
             <div className="text-xs font-bold text-slate-500 dark:text-slate-400 mb-2">
               Showing {filteredProducts.length} items
             </div>
-            {/* 3x3 Columns Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {/* Medium 2-Grid on mobile, 3-Grid on desktop */}
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
               {filteredProducts.map((product) => (
                 <ProductCard
                   key={product.id}
